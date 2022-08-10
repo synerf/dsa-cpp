@@ -4,14 +4,12 @@
 using namespace std;
 
 void bubbleSort(vector<int> &vect) {
-  int count = 1;
-  while (count <= vect.size() - 1) {
-    for (int i = 0; i <= vect.size() - 2; i++) {
-      if (vect[i] > vect[i + 1]) {
-        swap(vect[i], vect[i + 1]);
+  for (int i = 0; i < vect.size() - 1; i++) {
+    for (int j = 0; j < vect.size() - i - 1; j++) {
+      if (vect[j] > vect[j + 1]) {
+        swap(vect[j], vect[j + 1]);
       }
     }
-    count++;
   }
 }
 
