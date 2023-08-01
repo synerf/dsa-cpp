@@ -1,5 +1,5 @@
-#include<iostream>
 #include "DynamicArray.cpp"
+#include <iostream>
 
 using namespace std;
 
@@ -12,10 +12,10 @@ int main() {
   d1.add(50);
   d1.add(60);
 
-  cout<<d1.getElement(3)<<endl;
+  cout << d1.getElement(3) << endl;
 
   d1.print();
-  cout<<d1.getCapacity()<<endl;
+  cout << d1.getCapacity() << endl;
 
   DynamicArray d2(d1);
   DynamicArray d3;
@@ -27,7 +27,8 @@ int main() {
   d3.print();
 
   DynamicArray d4(100);
-  cout<<d4.getCapacity()<<endl;;
+  cout << d4.getCapacity() << endl;
+  ;
 
   return 0;
 }

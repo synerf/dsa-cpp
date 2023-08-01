@@ -1,5 +1,5 @@
-#include<iostream>
-#include<cstring>
+#include <cstring>
+#include <iostream>
 
 using namespace std;
 
@@ -7,26 +7,25 @@ class Student {
   int age;
 
   public:
-    char *name;
+  char *name;
 
-    // custom deep copy construcotr (inbuilt copy constructor is shallow copy)
-    Student(Student const &s) {
-      this->age = s.age;
-      this->name = new char[strlen(s.name) +1];
-      strcpy(this->name, s.name);
-    }
+  // custom deep copy construcotr (inbuilt copy constructor is shallow copy)
+  Student(Student const &s) {
+    this->age = s.age;
+    this->name = new char[strlen(s.name) + 1];
+    strcpy(this->name, s.name);
+  }
 
-    Student(int age, char *name) {
-      this->age = age;
-      // this->name = *name;   // shallow copy - copy only the address
-      this->name = new char[strlen(name) + 1];   // +1 to also copy the null character
-      strcpy(this->name, name);
-    }
+  Student(int age, char *name) {
+    this->age = age;
+    // this->name = *name;   // shallow copy - copy only the address
+    this->name = new char[strlen(name) + 1]; // +1 to also copy the null character
+    strcpy(this->name, name);
+  }
 
-    void display() {
-      cout<<name<<" "<<age<<endl;
-    }
-
+  void display() {
+    cout << name << " " << age << endl;
+  }
 };
 
 int main() {

@@ -1,9 +1,9 @@
-#include<iostream>
 #include "student.cpp"
+#include <iostream>
 
 using namespace std;
 
-int main () {
+int main() {
 
   Student s1;
   s1.display();
@@ -23,28 +23,25 @@ int main () {
   Student s6(10, 100);
   s6.display();
 
-
   // copy constructor
-  cout<<"Example of copy constructor"<<endl;
+  cout << "Example of copy constructor" << endl;
 
   Student s7(30, 200);
-  cout<<"S7: ";
+  cout << "S7: ";
   s7.display();
 
-  Student s8(s7);   // internal copy contructor will be called
-  cout<<"S8: ";
+  Student s8(s7); // internal copy contructor will be called
+  cout << "S8: ";
   s8.display();
-
 
   // copy assignment operator
   Student s9(10, 100);
   Student s10(20, 200);
 
-  s10 = s9;  // copy assignment operator
+  s10 = s9; // copy assignment operator
 
   s9.display();
   s10.display();
-
 
   // destructor for dynamically created objects need to be called manually be using 'delete' keyword
   delete s3;

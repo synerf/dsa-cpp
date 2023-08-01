@@ -4,7 +4,7 @@
 using namespace std;
 
 // function to store position of occurences of an element in array
-void storeAllPosition(int a[], int n, int x, int i, vector<int>& ans) {
+void storeAllPosition(int a[], int n, int x, int i, vector<int> &ans) {
   // base case
   if (i == n) return;
 
@@ -23,7 +23,7 @@ int main() {
   vector<int> ans = {};
   storeAllPosition(a, n, 1, 0, ans);
 
-  for (auto&& x : ans) {
+  for (auto &&x : ans) {
     cout << x << " ";
   }
 }

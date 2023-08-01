@@ -13,7 +13,7 @@ void bubbleSort(vector<int> &vect) {
         flag = 1;
       }
     }
-    if (flag == 0) {  // array is sorted, come out of the loop
+    if (flag == 0) { // array is sorted, come out of the loop
       break;
     }
 

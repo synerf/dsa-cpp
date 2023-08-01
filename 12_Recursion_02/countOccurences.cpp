@@ -4,7 +4,7 @@ using namespace std;
 
 // function to calculate number of times an element occurs in array using
 // recursion
-void countOccurences(int a[], int n, int x, int i, int& ans) {
+void countOccurences(int a[], int n, int x, int i, int &ans) {
   // base case
   if (i == n) return;
 

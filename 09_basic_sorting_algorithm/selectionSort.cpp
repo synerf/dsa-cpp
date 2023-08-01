@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void selectionSort(vector<int>& vect) {
+void selectionSort(vector<int> &vect) {
   for (int i = 0; i <= vect.size() - 2; i++) {
     int smallest = i;
     for (int j = i + 1; j <= vect.size() - 1; j++) {

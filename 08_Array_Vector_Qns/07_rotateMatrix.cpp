@@ -29,7 +29,7 @@
 
 using namespace std;
 
-void printMatrix(vector<vector<int>>& matrix) {
+void printMatrix(vector<vector<int>> &matrix) {
   int len = matrix.size();
   for (int i = 0; i < len; i++) {
     for (int j = 0; j < len; j++) {
@@ -39,7 +39,7 @@ void printMatrix(vector<vector<int>>& matrix) {
   }
 }
 
-void rotateMatrix(vector<vector<int>>& matrix) {
+void rotateMatrix(vector<vector<int>> &matrix) {
   int len = matrix.size();
 
   // transpose the matrix

@@ -1,18 +1,18 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
 int main() {
 
-  vector<int> *vp = new vector<int>();  // dynamic
-  vector<int> v;  // static
+  vector<int> *vp = new vector<int>(); // dynamic
+  vector<int> v;                       // static
 
-  vector<int> v2(100);   // creates vector v2 of initial capacity of 100
-  vector<int> v3(100,2);   // creates vector v3 of initial capacity of 100 and all elements will be 2
+  vector<int> v2(100);    // creates vector v2 of initial capacity of 100
+  vector<int> v3(100, 2); // creates vector v3 of initial capacity of 100 and all elements will be 2
 
-  // note - 
-  // in vectors, better to use push_back() to insert elements instead of 
+  // note -
+  // in vectors, better to use push_back() to insert elements instead of
   // something like v[2] = 100
   // also better to use v.at(2) to get element at some index rather then using v[2]
 
@@ -30,8 +30,8 @@ int main() {
 
   v.pop_back();
 
-  for(int i=0; i<v.size(); i++) {
-    cout<<v.at(i)<<endl;   // here can also use v[i] since i is always valid
+  for (int i = 0; i < v.size(); i++) {
+    cout << v.at(i) << endl; // here can also use v[i] since i is always valid
   }
 
   // cout<<v[0]<<endl;
@@ -44,6 +44,6 @@ int main() {
 
   // cout<<v.at(4)<<endl;
   // cout<<v.at(6)<<endl;
-  
+
   return 0;
 }
